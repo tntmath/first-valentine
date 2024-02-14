@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #82707a, #24111e 100%);
+}
+main {
+  position: relative;
+  /*
+  width: 100vw;
+  height: 100vh;
+*/
+  z-index: 1;
+}
+h1 {
+  font-family: "Niconne", cursive;
+  font-size: 10vw;
+  margin-left: 1rem;
+  color: rgba(255, 255, 255, 0.2);
+}
+p {
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+  font-size: max(3.3vw, 15px);
+  color: rgba(255, 255, 255, 0.5);
+}
+#filter {
+  /*
+  position: fixed;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(3, 3, 3) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+*/
+}
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
